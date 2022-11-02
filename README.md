@@ -16,7 +16,7 @@ The needed argument as a default is "nft_bevel.csv" for arg1 and any valid strin
 
 ##### Replace existing CSV provided as input, saved in the file system and use another CSV file of another team to generate and build new CSV with specific checksum or hashes.
 
-There is a nft_bevel.csv file which can be replaced with another team CSV with the same structure to get the new CSV generated.
+There is a nft_bevel.csv file which can be replaced with another team CSV with the same structure to get the new CSV generated. After replacing the existing default CSV file, you have to provide the name of the file you save it with as the first argument or arg1 when executing or building the project.
 
 ##### Output file name
 
