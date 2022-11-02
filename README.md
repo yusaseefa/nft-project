@@ -31,6 +31,12 @@ Take the CSV provided by the teams, and generate a CHIP-0007 compatible json, ca
 - [Chip-0007 JSON Schema Example](https://github.com/Chia-Network/chips/blob/main/assets/chip-0007/example.json)
 - [Create file checksum with SHA](https://mkyong.com/java/how-to-generate-a-file-checksum-value-in-java/)
 
+### Notes:
+If you are running the tool from the IDE, you need to enable annotation processing so that lombok will be executed fine.
+
+- [Configure Annotation Processors IntelliJ](https://www.jetbrains.com/help/idea/annotation-processors-support.html#annotation_processing)
+- [Setting up Lombok with Eclipse and Intellij](https://www.baeldung.com/lombok-ide)
+
 ### Chip-0007 Sample JSON Schema
 
 ```
