@@ -1,4 +1,3 @@
-import com.fasterxml.jackson.databind.ObjectMapper;
 import model.Chip007;
 import service.Chip0007Service;
 
@@ -50,7 +49,6 @@ public class Main {
 
             List<String> chip007Lines = service.chip0007ToString(chip007s);
             String csvContent = service.publishCsvFiles(columnNames, chip007Lines, fileOutputName);
-            System.out.println(csvContent);
 
         } catch (Exception ex) {
             throw new RuntimeException(ex);

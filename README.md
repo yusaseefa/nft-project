@@ -26,6 +26,9 @@ The output or newly generated .csv file must match "filename.output.csv" and rep
 
 Take the CSV provided by the teams, and generate a CHIP-0007 compatible json, calculate the sha256 of the json file and append it to each line in the csv (as a filename.output.csv)
 
+### CSV Input Directory
+To have a smooth execution, the input CSV file must be within the root directory outside of src/ folder.
+
 ### References
 - [Team Bevel CSV](https://docs.google.com/spreadsheets/d/1-9zf50iUmdtvpbEvQ7I-M2vlK8hCSB1DC_bF5bDNjxE/edit#gid=663257143)
 - [Chip-0007 JSON Schema Example](https://github.com/Chia-Network/chips/blob/main/assets/chip-0007/example.json)
