@@ -1,4 +1,4 @@
-## Team Bevel Chip-0007 Project
+## Chip-0007 Project
 
 ### Description
 A tool that takes .csv file name and generate Chip-0007 JSON schema for each line.
