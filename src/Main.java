@@ -47,7 +47,7 @@ public class Main {
                 }
             }
 
-            List<String> chip007Lines = service.chip0007ToString(chip007s);
+            List<String> chip007Lines = service.chip0007ToString(chip007s, fileOutputName);
             String csvContent = service.publishCsvFiles(columnNames, chip007Lines, fileOutputName);
 
         } catch (Exception ex) {

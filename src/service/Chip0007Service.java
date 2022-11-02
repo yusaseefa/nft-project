@@ -111,6 +111,8 @@ public class Chip0007Service {
         for (String line: rowValues) {
             csvContent += line.concat("\n");
         }
+
+        fileOutputName = fileOutputName.concat(".output.csv");
         FileWriter writer = new FileWriter(fileOutputName);
         writer.write(csvContent);
         writer.close();
@@ -118,10 +120,10 @@ public class Chip0007Service {
         return csvContent;
     }
 
-    public List<String> chip0007ToString(List<Chip007> chip007s) throws IOException, NoSuchAlgorithmException {
+    public List<String> chip0007ToString(List<Chip007> chip007s, String fileOutputName) throws IOException, NoSuchAlgorithmException {
         List<String> chipString = new ArrayList<>();
         List<String> lines = new ArrayList<>();
-        String tempFileName = "file.json";
+        String tempFileName = "nft".concat(fileOutputName).concat(".json");
 
         for (Chip007 chip007 : chip007s) {
             chipString.add(String.valueOf(chip007.getSeriesNumber()));

@@ -12,7 +12,7 @@ It then create a file containing each line of the CSV input file and append a th
 To run the application successfully with the required inputs and generated output.
 You need to provide a command line or CLI argument or parameters which are 2 and includes the .csv file name which should point to a file that exists and a string that will be used to generate the newly csv contained checksum file.
 
-The needed argument as a default is "nft_bevel.csv" for arg1 and any valid string as arg2.
+The needed argument as a default is "nft_bevel.csv" for arg1 and any valid string as arg2 and this can be a team name.
 
 ##### Replace existing CSV provided as input, saved in the file system and use another CSV file of another team to generate and build new CSV with specific checksum or hashes.
 
