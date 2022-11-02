@@ -14,9 +14,9 @@ You need to provide a command line or CLI argument or parameters which are 2 and
 
 The needed argument as a default is "nft_bevel.csv" for arg1 and any valid string as arg2.
 
-### Replace existing CSV provided as input.
+### Replace existing CSV provided as input, saved in the file system and use another CSV file of another team to generate and build new CSV with specific checksum or hashes.
 
-There is a nft_bevel file which can be replaced with another team CSV with the same structure to get the new CSV generated.
+There is a nft_bevel.csv file which can be replaced with another team CSV with the same structure to get the new CSV generated.
 
 ### Output file name
 
