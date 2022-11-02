@@ -14,19 +14,19 @@ You need to provide a command line or CLI argument or parameters which are 2 and
 
 The needed argument as a default is "nft_bevel.csv" for arg1 and any valid string as arg2.
 
-### Replace existing CSV provided as input, saved in the file system and use another CSV file of another team to generate and build new CSV with specific checksum or hashes.
+##### Replace existing CSV provided as input, saved in the file system and use another CSV file of another team to generate and build new CSV with specific checksum or hashes.
 
 There is a nft_bevel.csv file which can be replaced with another team CSV with the same structure to get the new CSV generated.
 
-### Output file name
+##### Output file name
 
 The output or newly generated .csv file must match "filename.output.csv" and replace "filename" with your team name 
 
-### Task Description
+##### Task Description
 
 Take the CSV provided by the teams, and generate a CHIP-0007 compatible json, calculate the sha256 of the json file and append it to each line in the csv (as a filename.output.csv)
 
-### CSV Input Directory
+##### CSV Input Directory
 To have a smooth execution, the input CSV file must be within the root directory outside of src/ folder.
 
 ### References
@@ -35,7 +35,7 @@ To have a smooth execution, the input CSV file must be within the root directory
 - [Create file checksum with SHA](https://mkyong.com/java/how-to-generate-a-file-checksum-value-in-java/)
 - [JSON Schema Validator](https://www.jsonschemavalidator.net/s/0Aw7Bmlb)
 
-### Notes:
+##### Notes:
 If you are running the tool from the IDE, you need to enable annotation processing so that lombok will be executed fine.
 
 - [Configure Annotation Processors IntelliJ](https://www.jetbrains.com/help/idea/annotation-processors-support.html#annotation_processing)
