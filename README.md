@@ -18,6 +18,10 @@ The needed argument as a default is "nft_bevel.csv" for arg1 and any valid strin
 
 There is a nft_bevel file which can be replaced with another team CSV with the same structure to get the new CSV generated.
 
+### Output file name
+
+The output or newly generated .csv file must match "filename.output.csv" and replace "filename" with your team name 
+
 ### Task Description
 
 Take the CSV provided by the teams, and generate a CHIP-0007 compatible json, calculate the sha256 of the json file and append it to each line in the csv (as a filename.output.csv)
