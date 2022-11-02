@@ -29,6 +29,7 @@ Take the CSV provided by the teams, and generate a CHIP-0007 compatible json, ca
 ### References
 - [Team Bevel CSV](https://docs.google.com/spreadsheets/d/1-9zf50iUmdtvpbEvQ7I-M2vlK8hCSB1DC_bF5bDNjxE/edit#gid=663257143)
 - [Chip-0007 JSON Schema Example](https://github.com/Chia-Network/chips/blob/main/assets/chip-0007/example.json)
+- [Create file checksum with SHA](https://mkyong.com/java/how-to-generate-a-file-checksum-value-in-java/)
 
 ### Chip-0007 Sample JSON Schema
 
