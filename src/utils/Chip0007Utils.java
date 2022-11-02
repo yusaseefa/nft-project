@@ -19,7 +19,7 @@ public class Chip0007Utils {
     }
 
     public static String uuidOrNew(String uuid) {
-        return uuid != null ? uuid : UUID.randomUUID().toString();
+        return uuid != null ? uuid : UUID.randomUUID().toString().toUpperCase();
     }
 
 }
