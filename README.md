@@ -33,6 +33,7 @@ To have a smooth execution, the input CSV file must be within the root directory
 - [Team Bevel CSV](https://docs.google.com/spreadsheets/d/1-9zf50iUmdtvpbEvQ7I-M2vlK8hCSB1DC_bF5bDNjxE/edit#gid=663257143)
 - [Chip-0007 JSON Schema Example](https://github.com/Chia-Network/chips/blob/main/assets/chip-0007/example.json)
 - [Create file checksum with SHA](https://mkyong.com/java/how-to-generate-a-file-checksum-value-in-java/)
+- [JSON Schema Validator](https://www.jsonschemavalidator.net/s/0Aw7Bmlb)
 
 ### Notes:
 If you are running the tool from the IDE, you need to enable annotation processing so that lombok will be executed fine.
