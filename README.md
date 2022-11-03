@@ -1,5 +1,8 @@
 ## Chip-0007 Project
 
+### Notice
+Update has been made to CSV file to create structured and well formatted data for transformation and processing.
+
 ### Description
 A tool that takes .csv file name and generate Chip-0007 JSON schema for each line.
 
