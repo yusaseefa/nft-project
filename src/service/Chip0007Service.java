@@ -12,7 +12,6 @@ import java.io.IOException;
 import java.security.MessageDigest;
 import java.security.NoSuchAlgorithmException;
 import java.util.ArrayList;
-import java.util.Arrays;
 import java.util.List;
 import java.util.Objects;
 import java.util.stream.Collectors;
@@ -75,17 +74,6 @@ public class Chip0007Service {
     }
 
     public RowValue setRowValue(String[] row, String lineConvertedToRow) {
-
-        String line = lineConvertedToRow;
-//        int attributeStartingPoint = line.indexOf("hair:");
-//
-//        String attributeStartToEndOfLine = line.substring(attributeStartingPoint, line.length());
-//        int attributeEndingPoint =attributeStartToEndOfLine.indexOf(".");
-//
-//        System.out.println(attributeStartToEndOfLine);
-//        row[5] = attributeStartToEndOfLine.substring(0, attributeEndingPoint); //  Where attributes values are positioned.
-//
-//        row[6] = lineConvertedToRow.substring((attributeStartingPoint + attributeEndingPoint) + 1, line.length());
 
         String seriesNumber = row[0];
         String fileName = row[1];
