@@ -29,7 +29,7 @@ public class Chip0007Utils {
     public static void setAttributes(Chip007 chip007, RowValue rowValue) {
 
         String attributeRow = rowValue.getAttributes();
-        List<String> attributes = Arrays.asList(attributeRow.split("&"));
+        List<String> attributes = Arrays.asList(attributeRow.split(";"));
 
         for (String attribute : attributes) {
             String[] attributeElements = attribute.split(":");

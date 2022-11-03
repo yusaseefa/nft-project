@@ -166,7 +166,7 @@ public class Chip0007Service {
                     .map(attr -> attr.getTraitType().concat(":").concat(attr.getValue()))
                     .collect(Collectors.toList());
 
-            String joinedAttributes = attributeList.stream().collect(Collectors.joining("&"));
+            String joinedAttributes = attributeList.stream().collect(Collectors.joining(";"));
 
             chipString.add(joinedAttributes);
             chipString.add(chip007.getCollection().getId());

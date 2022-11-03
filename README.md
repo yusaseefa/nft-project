@@ -3,7 +3,7 @@
 ### Notice
 Update has been made to CSV file to create structured and well formatted data for transformation and processing.
 
-**In the case of the attribute values, each pair is delimited with a & else using a comman "," will create a complex data set that is difficult to process and transform**; 
+**In the case of the attribute values, each pair is delimited with a ; else using a comman "," will create a complex data set that is difficult to process and transform**; 
 
 ### Description
 A tool that takes .csv file name and generate Chip-0007 JSON schema for each line.
