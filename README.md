@@ -12,11 +12,11 @@ It then create a file containing each line of the CSV input file and append a th
 To run the application successfully with the required inputs and generated output.
 You need to provide a command line or CLI argument or parameters which are 2 and includes the .csv file name which should point to a file that exists and a string that will be used to generate the newly csv contained checksum file.
 
-The needed argument as a default is "nft_bevel.csv" for arg1 and any valid string as arg2 and this can be a team name.
+The needed argument as a default is "nft_grit.csv" for arg1 and any valid string as arg2 and this can be a team name.
 
 ##### Replace existing CSV provided as input, saved in the file system and use another CSV file of another team to generate and build new CSV with specific checksum or hashes.
 
-There is a nft_bevel.csv file which can be replaced with another team CSV with the same structure to get the new CSV generated. After replacing the existing default CSV file, you have to provide the name of the file you save it with as the first argument or arg1 when executing or building the project.
+There is a nft_grit.csv file which can be replaced with another team CSV with the same structure to get the new CSV generated. After replacing the existing default CSV file, you have to provide the name of the file you save it with as the first argument or arg1 when executing or building the project.
 
 ##### Output file name
 
@@ -30,7 +30,7 @@ Take the CSV provided by the teams, and generate a CHIP-0007 compatible json, ca
 To have a smooth execution, the input CSV file must be within the root directory outside of src/ folder.
 
 ### References
-- [Team Bevel CSV](https://docs.google.com/spreadsheets/d/1-9zf50iUmdtvpbEvQ7I-M2vlK8hCSB1DC_bF5bDNjxE/edit#gid=663257143)
+- [Team Grit CSV](https://docs.google.com/spreadsheets/d/1b5H3bp_9-YVjTYQNjLeokXJewrcPfgUo_MYvYXtaUno/edit#gid=0)
 - [Chip-0007 JSON Schema Example](https://github.com/Chia-Network/chips/blob/main/assets/chip-0007/example.json)
 - [Create file checksum with SHA](https://mkyong.com/java/how-to-generate-a-file-checksum-value-in-java/)
 - [JSON Schema Validator](https://www.jsonschemavalidator.net/s/0Aw7Bmlb)

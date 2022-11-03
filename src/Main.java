@@ -1,3 +1,4 @@
+import model.Chip0007Json;
 import model.Chip007;
 import service.Chip0007Service;
 
@@ -8,6 +9,7 @@ import java.nio.file.Files;
 import java.nio.file.Path;
 import java.nio.file.Paths;
 import java.util.ArrayList;
+import java.util.Arrays;
 import java.util.List;
 
 public class Main {
@@ -29,27 +31,41 @@ public class Main {
         }
 
         try (BufferedReader br = Files.newBufferedReader(filePath, StandardCharsets.UTF_8)) {
-            List<Chip007> chip007s = new ArrayList<>();
+            List<Chip0007Json> chip0007Jsons = new ArrayList<>();
             List<String> columnNames = new ArrayList<>();
+            String teamName = null;
             String line = null;
-            int columnIdx = 0;
+            int rowIdx = 1;
 
             while ((line = br.readLine()) != null) {
                 String[] row = line.split(",");
-                String[] columns = new String[row.length];
-
-                if ((++columnIdx) == 1) {
+                if ((rowIdx) == 1) {
+                    System.out.println("111111111111111111.");
+                    System.out.println(Arrays.toString(row));
+                    System.out.println("111111111111111111.");
                     columnNames = service.prepareColumnNames(row);
                 }
-                else {
-                    Chip007 chip007 = service.save(row);
-                    chip007s.add(chip007);
+                else if ((rowIdx) == 2) {
+                    System.out.println("1111111111111111112.");
+                    System.out.println(Arrays.toString(row));
+                    System.out.println("1111111111111111112.");
+                    teamName = row[0];
                 }
+                else {
+                    System.out.println(Arrays.toString(row));
+                    Chip0007Json chip0007Json = service.save(row, line);
+                    chip0007Jsons.add(chip0007Json);
+                }
+                System.out.println("Row Index");
+                System.out.println(Arrays.toString(row));
+                System.out.println(rowIdx);
+                System.out.println(++rowIdx);
+                System.out.println("Row Index");
             }
 
-            List<String> chip007Lines = service.chip0007ToString(chip007s, fileOutputName);
-            String csvContent = service.publishCsvFiles(columnNames, chip007Lines, fileOutputName);
-
+            List<String> chip007Lines = service.chip0007ToString(chip0007Jsons);
+            String csvContent = service.publishCsvFiles(teamName, columnNames, chip007Lines, fileOutputName);
+            System.out.println(csvContent);
         } catch (Exception ex) {
             throw new RuntimeException(ex);
         }
