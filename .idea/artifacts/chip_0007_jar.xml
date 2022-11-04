@@ -1,0 +1,14 @@
+<component name="ArtifactManager">
+  <artifact type="jar" name="chip-0007:jar">
+    <output-path>$PROJECT_DIR$/out/artifacts/chip_0007_jar</output-path>
+    <root id="archive" name="chip-008.jar">
+      <element id="module-output" name="chip-008" />
+      <element id="extracted-dir" path="$USER_HOME$/Downloads/gson-2.10.jar" path-in-jar="/" />
+      <element id="extracted-dir" path="$USER_HOME$/Downloads/lombok-1.18.24.jar" path-in-jar="/" />
+      <element id="extracted-dir" path="$USER_HOME$/Downloads/jackson-core-2.14.0-rc3.jar" path-in-jar="/" />
+      <element id="extracted-dir" path="$USER_HOME$/Downloads/jackson-annotations-2.14.0-rc3.jar" path-in-jar="/" />
+      <element id="extracted-dir" path="$USER_HOME$/Downloads/jackson-databind-2.14.0-rc3.jar" path-in-jar="/" />
+      <element id="file-copy" path="$PROJECT_DIR$/nft_grit.csv" />
+    </root>
+  </artifact>
+</component>

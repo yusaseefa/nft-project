@@ -5,6 +5,29 @@ Update has been made to CSV file to create structured and well formatted data fo
 
 **In the case of the attribute values, each pair is delimited with a ; else using a comman "," will create a complex data set that is difficult to process and transform**; 
 
+### Application Details
+- JDK 11
+- Lombok
+- Google Gson
+
+### How to Run Application 
+
+- Make sure you have Java installed on your computer
+- If using JDK 8, you need to have JDK and JRE installed. If you using Java 9+, download the JDK installer
+- Set your ```JAVA_HOME``` to the location of the installed JDK
+- Git clone the application using ```git clone https://github.com/yusaseefa/nft-project.git```
+- Open the project directory or folder use the ```cd out/production/chip-008```  to open the app production or build entry folder
+- Run ```java Main nft_grit.csv team_grit``` to run the application.
+- If successful the execution, a new CSV file will be generated named team_grit.output in the same folder.
+- To get a well structured CSV file, all CSV files to be read have to be structured like nft_grit.csv format like
+    
+
+    Series Number, Filename, Name, Description, Gender, Attributes, UUID
+    TEAM NAME
+    10, toy-soldier, toy soldier, a man stronger than an army, male,hair: bald;strengths:powerful;weakness: sentimental,fc8ea3ac-59d1-11ed-9b6a-0242ac120002
+
+**TEAM NAME** is a placeholder to be replaced wih the actual team name
+
 ### Description
 A tool that takes .csv file name and generate Chip-0007 JSON schema for each line.
 
@@ -35,6 +58,9 @@ Take the CSV provided by the teams, and generate a CHIP-0007 compatible json, ca
 To have a smooth execution, the input CSV file must be within the root directory outside of src/ folder.
 
 ### References
+- [How to set PATH variable](https://docs.oracle.com/javase/tutorial/essential/environment/paths.html)
+- [How to set JAVA_HOME in Windows](https://www.ibm.com/docs/en/b2b-integrator/5.2?topic=installation-setting-java-variables-in-windows)
+- [How to set JAVA_HOME in Ubuntu](https://stackoverflow.com/questions/9612941/how-to-set-java-environment-path-in-ubuntu)
 - [Team Grit CSV](https://docs.google.com/spreadsheets/d/1b5H3bp_9-YVjTYQNjLeokXJewrcPfgUo_MYvYXtaUno/edit#gid=0)
 - [Chip-0007 JSON Schema Example](https://github.com/Chia-Network/chips/blob/main/assets/chip-0007/example.json)
 - [Create file checksum with SHA](https://mkyong.com/java/how-to-generate-a-file-checksum-value-in-java/)
