@@ -18,7 +18,7 @@ Update has been made to CSV file to create structured and well formatted data fo
 - Git clone the application using ```git clone https://github.com/yusaseefa/nft-project.git```
 - Open the project directory or folder, open your terminal or command prompt and use ```cd out/production/chip-008``` command  to open the app production or build entry folder
 - Run ```java Main nft_grit.csv team_grit``` to run the application.
-- If successful the execution, a new CSV file will be generated named team_grit.output.csv in the same folder.
+- If successful the execution, a new CSV file will be generated named team_grit.output.csv and the jsons for each team member in the same folder.
 - To get a well structured CSV file, all CSV files to be read have to be structured like nft_grit.csv format like
     
 
