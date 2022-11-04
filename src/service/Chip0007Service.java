@@ -154,7 +154,7 @@ public class Chip0007Service {
 
             createJsonFileAndSave(chip007, tempFileName);
             String checksum = generateSHA256Hash(tempFileName);
-            removeTempFile(tempFileName);
+//            removeTempFile(tempFileName);
 
             if (chip007.getAttributes() != null && chip007.getAttributes().get(0) != null) {
                 chip007.getAttributes().remove(0);
